@@ -24,13 +24,15 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
+set shell=fish
+
 
 " Settings for powershell
-set shell=powershell
+"set shell=powershell
 " Needed only for powershell, otherwise comment out
-set shellcmdflag=-c
-set shellquote=\"
-set shellxquote=
+"set shellcmdflag=-c
+"set shellquote=\"
+"set shellxquote=
 
 set backupskip=/tmp/*,/private/tmp/*
 
@@ -115,8 +117,6 @@ au BufNewFile,BufRead *.rs set filetype=rust
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md,.rs
 
-autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 softtabstop=2
-
 "}}}
 
 " Imports "{{{
@@ -128,6 +128,9 @@ if has("unix")
   if s:uname == "Darwin\n"
     runtime ./macos.vim
   endif
+endif
+if has('win32')
+    runtime ./windows.vim
 endif
 
 runtime ./maps.vim
@@ -157,4 +160,4 @@ endif
 set exrc
 "}}}
 
-" vim: set foldmethod=marker foldlevel=0:
+" vim: set foldmethod=marker f:oldlevel=0:

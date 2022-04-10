@@ -1,7 +1,7 @@
 if !exists('g:loaded_telescope') | finish | endif
 
-nnoremap  <silent> ;f <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap  <silent> ;r <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <silent> ;r <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <silent> ;f <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <silent> \\ <cmd>Telescope buffers<cr>
 nnoremap <silent> ;; <cmd>Telescope help_tags<cr>
 
@@ -21,12 +21,12 @@ telescope.setup{
     },
     mappings = {
       i = {
-        ["<C-e>"] = actions.close,
+        ["q"] = actions.close,
         ["<C-s>"] = actions.select_vertical,
         ["<C-S-s>"] = actions.select_horizontal,
       },
       n = {
-        ["<C-e>"] = actions.close,
+        ["q"] = actions.close,
         ["<C-s>"] = actions.select_vertical,
         ["<C-S-s>"] = actions.select_horizontal,
       },

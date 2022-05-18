@@ -103,13 +103,19 @@ settings = {
       },
     inlayHints = {
       enable = true,
+      typeHints = true,
+      reborrowHints = true,
       chainingHints = true, 
       parameterHints = true,
-      typeHints = true	  
+      closureReturnTypeHints = true,
+      lifetimeElisionHints = true,
+      paramNamesForLifeTimeElisionHints = true
       }
     }
   }
 }
+
+require('rust-tools').setup({})
 
 -- icon
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

@@ -28,6 +28,7 @@ if has("nvim")
   Plug 'hoob3rt/lualine.nvim'
   Plug 'windwp/nvim-autopairs'
   Plug 'windwp/nvim-ts-autotag'
+  Plug 'simrat39/rust-tools.nvim', { 'commit': 'e29fb47326093fb197f17eae5ac689979a9ce191' }
 endif
 
 call plug#end()

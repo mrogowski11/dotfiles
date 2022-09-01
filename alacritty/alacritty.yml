@@ -1,0 +1,46 @@
+font:
+    normal:
+        family: Hack Nerd Font
+        style: Regular
+
+window:
+    opacity: 0.95
+    dynamic_title: false
+    decorations: "Full"
+    padding:
+        x: 10
+        y: 30
+
+# Color Settings (Material)
+colors:
+  primary:
+    background: '#263238'
+    foreground: '#eceff1'
+
+  normal:
+    black:   '#546e7a'
+    red:     '#ff5252'
+    green:   '#5cf19e'
+    yellow:  '#ffd740'
+    blue:    '#40c4ff'
+    magenta: '#ff4081'
+    cyan:    '#64fcda'
+    white:   '#ffffff'
+
+  bright:
+    black:   '#b0bec5'
+    red:     '#ff8a80'
+    green:   '#b9f6ca'
+    yellow:  '#ffe57f'
+    blue:    '#80d8ff'
+    magenta: '#ff80ab'
+    cyan:    '#a7fdeb'
+    white:   '#ffffff'
+
+  selection:
+    text: '0xffffff'
+    background: '0x607d8b'
+    white:   '0xffffff'
+cursor:
+  style: Block
+  unfocused_hollow: true

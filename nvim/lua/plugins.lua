@@ -19,15 +19,14 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
   use 'neovim/nvim-lspconfig' -- LSP
-  use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
   use 'simrat39/rust-tools.nvim'
 
+  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
-  use 'L3MON4D3/LuaSnip'
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'

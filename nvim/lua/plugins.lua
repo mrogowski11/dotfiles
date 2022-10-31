@@ -19,6 +19,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
   use 'neovim/nvim-lspconfig' -- LSP
+  use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions
   use 'simrat39/rust-tools.nvim'
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
@@ -40,5 +41,9 @@ packer.startup(function(use)
   use 'akinsho/nvim-bufferline.lua'
 
   use 'dinhhuy258/git.nvim' -- For git blame & browse
+  use { 
+    'folke/trouble.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' }
+  }
 end)
 

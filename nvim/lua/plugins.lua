@@ -45,5 +45,7 @@ packer.startup(function(use)
     'folke/trouble.nvim',
     requires = { 'kyazdani42/nvim-web-devicons' }
   }
+  use 'theprimeagen/harpoon'
+  use 'mbbill/undotree'
 end)
 

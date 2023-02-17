@@ -56,6 +56,10 @@ keymap.set('n', '<C-u>', '<C-u>zz')
 keymap.set('n', 'n', 'nzzzv')
 keymap.set('n', 'N', 'Nzzzv')
 
+-- Indent/unident selected block
+keymap.set('v', '<', '<gv')
+keymap.set('v', '>', '>gv')
+
 -- trouble plugin
 keymap.set('n', '<leader>xx', '<cmd>TroubleToggle<cr>',
   {silent = true, noremap = true}

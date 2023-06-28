@@ -29,7 +29,7 @@ keymap.set('n', 'te', ':tabedit<CR>')
 keymap.set('n', 'sh', ':split<Return><C-w>w')
 keymap.set('n', 'ss', ':vsplit<Return><C-w>w')
 -- Move window
-keymap.set('n', '<Space>', '<C-w>w')
+keymap.set('n', '<leader>w', '<C-w>w')
 keymap.set('', 'sh', '<C-w>h')
 keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
@@ -57,8 +57,8 @@ keymap.set('n', 'n', 'nzzzv')
 keymap.set('n', 'N', 'Nzzzv')
 
 -- Indent/unident selected block
-keymap.set('v', '<', '<gv')
 keymap.set('v', '>', '>gv')
+keymap.set('v', '<', '<gv')
 
 -- trouble plugin
 keymap.set('n', '<leader>xx', '<cmd>TroubleToggle<cr>',

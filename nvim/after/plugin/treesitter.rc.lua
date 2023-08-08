@@ -23,7 +23,8 @@ ts.setup {
     "lua",
     "c",
     "cpp",
-    "rust"
+    "rust",
+    "go"
   },
   autotag = {
     enable = true,

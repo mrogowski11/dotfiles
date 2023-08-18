@@ -39,28 +39,28 @@ end
 protocol.CompletionItemKind = {
   '', -- Text
   '', -- Method
-  '', -- Function
-  '', -- Constructor
+  '󰊕', -- Function
+  '󰊕', -- Constructor
   '', -- Field
   '', -- Variable
   '', -- Class
-  'ﰮ', -- Interface
-  '', -- Module
+  '󰜰', -- Interface
+  '󰏗', -- Module
   '', -- Property
   '', -- Unit
-  '', -- Value
+  '󰎠', -- Value
   '', -- Enum
-  '', -- Keyword
-  '﬌', -- Snippet
+  '󰌋', -- Keyword
+  '󰘍', -- Snippet
   '', -- Color
   '', -- File
-  '', -- Reference
+  '󰆑', -- Reference
   '', -- Folder
   '', -- EnumMember
   '', -- Constant
   '', -- Struct
   '', -- Event
-  'ﬦ', -- Operator
+  '󰘧', -- Operator
   '', -- TypeParameter
 }
 
@@ -135,7 +135,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 )
 
 -- Diagnostic symbols in the sign column (gutter)
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+local signs = { Error = "󰅚 ", Warn = " ", Hint = "󰌶 ", Info = " " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
